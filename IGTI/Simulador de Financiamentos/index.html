@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Simulador de Financiamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+  <section id="container">
+    <h1>Simulador de Financiamento</h1>
+    <div id="cadastro">  
+      <form name="simulador">
+        <label>Valor:</label><br />
+        <input id="valor" type="number" name="Valor" value="200000"/><br /><br />
+        <label>Prazo em anos:</label><br />
+        <input id="prazo" type="number" name="Prazo" value="20"/><br /><br />
+        <label>Juros ao ano:</label><br />
+        <input id="juros" type="number" name="Juros" step="0.01" value="0.08" /><br /><br />
+        <button id="btn" type="button" onclick=simular()>Simular</button>
+      </form>
+    </div>
+    <div id="resultado">
+      <form name="resultado">  
+        <label>Valor financiado:</label><br />
+        <input id="valorR" readonly type="number" name="ValorR" value=""/><br /><br />
+        <label>Prazo em meses:</label><br />
+        <input id="prazoR" readonly type="number" name="PrazoR" value=""/><br /><br />
+        <label>Juros acumulado:</label><br />
+        <input id="jurosR" readonly type="number" name="JurosR" step="0.01" value="" /><br /><br />
+      </form>
+    </div>
+  </section>
+  <section>
+    <div id="parcelas">
+      <table id="parcela">
+        <tread>
+          <tr>
+            <td>Prestação</td>
+            <td>Amortização</td>
+            <td>Juros</td>
+            <td>Total</td>
+          </tr>
+        </tread>
+      </table>
+      <table id="parcela_resultado">
+        <tr>
+          <td id="res_prestacao1"></td>
+          <td id="res_amortizacao1"></td>
+          <td id="res_juros1"></td>
+          <td id="res_total1"></td>
+        </tr>
+        <tr>
+          <td id="res_prestacao2"></td>
+          <td id="res_amortizacao2"></td>
+          <td id="res_juros2"></td>
+          <td id="res_total2"></td>
+        </tr>
+        <tr>
+          <td id="res_prestacao3"></td>
+          <td id="res_amortizacao3"></td>
+          <td id="res_juros3"></td>
+          <td id="res_total3"></td>
+        </tr>
+        <tr>
+          <td id="res_prestacao4"></td>
+          <td id="res_amortizacao4"></td>
+          <td id="res_juros4"></td>
+          <td id="res_total4"></td>
+        </tr>
+        <tr>
+          <td id="res_prestacao5"></td>
+          <td id="res_amortizacao5"></td>
+          <td id="res_juros5"></td>
+          <td id="res_total5"></td>
+        </tr>
+
+      </table>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

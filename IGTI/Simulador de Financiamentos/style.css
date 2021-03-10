@@ -1,0 +1,64 @@
+body {
+  font-family: arial,sans-serif;
+  color:#0000FF;
+}
+#container {
+  font-size: 20px;
+}
+#cadastro, #resultado {
+  margin-left: 320px;
+}
+body h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 160px;
+}
+body input, button {
+  color: #0000FF;
+  font-size: 30px;
+  border: 1px solid #00f;
+  border-radius: 5px;
+  box-shadow: 2px 2px #00f;
+  text-align: right;
+  width: 300px;
+}
+button {
+  background-color: #999;
+  width: 305px;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px ;
+  margin-bottom: 50px;
+}
+button:hover {
+  color:#fff;
+  background-color: #00f;
+}
+div table {
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.titulo {
+  background-color: #ccc;
+  margin: 0;
+}
+#parcela {
+  visibility: hidden;
+  background-color: #ccc;
+  padding:3px;
+  padding-left: 60px;
+}
+#parcela td {
+  padding-right: 110px;
+}
+#parcela_resultado {
+  margin:0;
+  padding: 0px 200px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+#parcela_resultado td {
+  padding-right: 100px;
+}
